@@ -10,6 +10,18 @@ export const routes: Routes = [
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
+    },
+    {
+        path: 'admin',
+        loadChildren: ()=> import('./pages/admin/shell/admin.route').then(r => r.ADMIN_ROUTE)
+    },
+    {
+        path: 'login',
+        loadChildren: () => import('./pages/login/shell/login.route').then(r => r.LOGIN_ROUTE)
+    },
+    {
+        path: 'settings',
+        loadChildren: () => import('./pages/settings/shell/settings.route').then(r => r.SETTINGS_ROUTE)
     }
     // ,
     // {
