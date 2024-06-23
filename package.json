@@ -1,5 +1,5 @@
 {
-  "name": "messy-digits-frontend",
+  "name": "stalta-frontend",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:MessyDigitsFrontend": "node dist/messy-digits-frontend/server/server.mjs"
+    "serve:ssr:stalta-frontend": "node dist/stalta-frontend/server/server.mjs"
   },
   "private": true,
   "dependencies": {

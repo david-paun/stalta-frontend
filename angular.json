@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MessyDigitsFrontend": {
+    "stalta-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/messy-digits-frontend",
+            "outputPath": "dist/stalta-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MessyDigitsFrontend:build:production"
+              "buildTarget": "stalta-frontend:build:production"
             },
             "development": {
-              "buildTarget": "MessyDigitsFrontend:build:development"
+              "buildTarget": "stalta-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MessyDigitsFrontend:build"
+            "buildTarget": "stalta-frontend:build"
           }
         },
         "test": {
