@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/assets/fonts/open-sans/webfonts/open-sans-latin-400-normal.woff2') format('woff2');
+    }
+  }
+
+
+  $my-custom-level: mat.define-typography-level(
+    $font-family: "Open Sans",
+    $font-weight: 400,
+    $font-size: 1rem,
+    $line-height: 1,
+    $letter-spacing: normal,
+  );
+  
+
+/* html, body { height: 100%; } */
+body { 
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+}
+body {
+    background-color: #424242;
+    color: whitesmoke;
+}
