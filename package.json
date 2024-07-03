@@ -1,6 +1,6 @@
 {
   "name": "stalta-frontend",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:stalta-frontend": "node dist/stalta-frontend/server/server.mjs"
+    "serve:ssr:stalta-frontend": "node dist/stalta-frontend/server/server.mjs",
+    "format": "prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,7 @@
     "@angular/router": "^17.1.0",
     "@angular/ssr": "^17.1.3",
     "express": "^4.18.2",
+    "prettier": "^3.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
